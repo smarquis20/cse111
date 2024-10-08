@@ -1,0 +1,64 @@
+Shaun Marquis - CSE 111 Proposal for a Student Chosen Program
+
+    (This is a proposal. All proposals are written with our best
+    knowledge at the beginning of a project. As we progress from the
+    beginning to the end of a project, we gain more knowledge, and we
+    change some of our proposed ideas. This is part of completing any
+    project and is fine.  However, we still must write a proposal so
+    that our teachers or supervisors know what we intend to do. Please
+    answer each of the following questions to the best of your
+    knowledge.)
+
+1. What is the title of your program?
+
+    Bishopric Talk Assistant
+
+2. What real-world problem will your program address or help to solve?
+
+    I am currently serving in my ward as a 2nd Counslor to the Bishop.  One of my tasks that I am asked
+    to do is to find speakers for upcoming sacrament meeting.  We currently use an excel spreadsheet to tract
+    who has already spoken, the date they spoke, and the topic given.  I find it hard sometimes to look back
+    and try to figure out who has already spoken and how long ago and what they spoke on.  I want to create
+    a program with a gui interface that will present me with a menu of options that will let me choose 
+    
+    * Look up an individual, when they last spoke and what they spoke on.  
+    * Give me a list of past speakers within a given time frame.  
+    * The ability to update the list with upcoming speakers and topics.
+    * Give me a view of potential speakers who haven't spoken in a while
+    * Allow me to add notes or comments for each individual
+    * Possibly somehow connect to the tools app to provide me contact details
+
+3. What will you learn from developing this program?
+
+    A program like this will reinforce all of the topics that we have covered this class and 
+    the previous 2 classes i took before this.  This will require reading, appending to a csv
+    or a database of some sort.  This will require writing several functions that can be reused.
+    This will require learning to create and use a gui and possibly connecting to church tools/api's.
+
+4. What Python modules will your program use?
+
+    csv, datetime, math, pandas, pytest, mysql, tkinter
+
+5. List the names of functions you will need?
+
+    read_member_dict - creates a dictionary of members pulled from a csv or mysql with all their speaking details.
+
+    time_since_spoken - will input a name and will calculate and return how long since last spoken.
+
+    create_speaking_list - will take input on how many months since spoken and will create and return a list of possible speakers.
+
+    update_speaker_list - will take input (date, name, topic) and will update / append dictionary or database.
+
+    *retrieve_contact - this is a nice to have to quickly get a members contact info so i can speak to them.  Function would
+                        input name and return phone/email for contacting
+
+6. List the names of the test functions you will write.
+
+    test_read_member_dict - enter a list of last names and expected return
+
+    test_time_since_spoken - enter name and months since spoken
+
+    test_create_speaking_list - enter something like 6 months and expected names returned
+
+    test_retrieve_contact - enter list of names and expected phone numbers
+
